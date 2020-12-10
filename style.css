@@ -16,7 +16,6 @@ Tertiaire : #99E2D0  (vert)
 html body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Roboto";
 }
 
@@ -38,6 +37,7 @@ html body{
     display: flex;
     justify-content: center;
     background-color: #E9E9E9;
+    box-shadow: 0 6px 5px -5px rgba(0,0,0,0.30) inset;
 }
 .place_content{
     font-family: "Roboto";
@@ -89,7 +89,7 @@ button{
 
 .how{
     width: 100%;
-    height: 52vh;
+    height: 49.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +99,6 @@ button{
     margin: 0;
     padding: 0;
     width: 90%;
-    height: 5vh;
 }
 .how .card_how{
     display: flex;
@@ -136,10 +135,6 @@ button{
     align-items: center;
 }
 
-.restaurant a{
-    text-decoration: none;
-    color: black;
-}
 
 .restaurant h2{
     width: 100%;
@@ -156,10 +151,30 @@ button{
     overflow: hidden;
     box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
 }
-.restaurant .card_restaurant img{
-    object-fit: cover;
+.restaurant .card_restaurant .new{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E8C70;
+    background-color: #99E2D0;
+    border-radius: 5px;
+    position: relative;
+    top: 5%;
+    left: 67%;
+    margin: 0 0 -30px 0;
+}
+.restaurant .card_restaurant .img_link {
+    display: block;
     width: 100%;
     height: 68%;
+    text-decoration: none;
+}
+.restaurant .card_restaurant .img_link  img{
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
 }
 .restaurant .card_restaurant .restaurant_content{
     display: flex;
