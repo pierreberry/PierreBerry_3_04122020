@@ -28,7 +28,7 @@ html body{
     align-items: center;
 }
 .logo img{
-    width: 50%;
+    width: 40%;
 }
 
 .place{
@@ -45,10 +45,13 @@ html body{
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: #383838;
     font-weight: 600;
+}
+.place_content p{
+    padding-left: 10px;
 }
 
 .presentation{
@@ -76,37 +79,53 @@ html body{
     color: #8E8E8E;
 }
 button{
-    width: 300px;
+    width: 250px;
     height: 5vh;
     border-radius: 30px 30px 30px 30px;
-    background: #FF79DA;
-    background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 10%, #9F60D7 100%);    
+    background: linear-gradient(to bottom, #e771da 0%, #9F60D7 100%);    
     border: none;
     color: white;
     font-size: 1em;
     font-weight: 600;
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.25);
+    transition: all 500ms;
+}
+button:hover{
+    background: linear-gradient(to bottom, #ff7bf0 0%, #b46bf3 100%);    
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.50);
 }
 
 .how{
     width: 100%;
-    height: 49.5vh;
+    height: 49vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 .how h2{
     margin: 0;
     padding: 0;
     width: 90%;
 }
+.how .container_how{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .how .card_how{
     display: flex;
-    width: 85%;
-    height: 7vh;
+    width: 300px;
+    height: 80px;
     background-color: #F6F6F6;
     align-items: center;
     border-radius: 20px 20px 20px 20px;
+    font-weight: 500;
+    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
 }
 .how .card_how .number_how{
     display: flex;
@@ -122,17 +141,19 @@ button{
 .how .card_how i{
     color: #9356DC;
     margin: 0 15px 0 0;
+    font-size: 1.2em;
 }
 
 .restaurant{
     margin: 0;
-    padding: 10% 0 0 0;
+    padding: 10px 0 0 0;
     background-color: #F6F6F6;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -144,12 +165,13 @@ button{
 .restaurant .card_restaurant{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 320px;
     height: 280px;
-    margin: 0 0 5% 0;
+    margin: 10px;
     border-radius: 20px 20px 20px 20px;
     overflow: hidden;
     box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.5);
+    transition: 500ms;
 }
 .restaurant .card_restaurant .new{
     width: 100px;
@@ -159,7 +181,7 @@ button{
     align-items: center;
     color: #1E8C70;
     background-color: #99E2D0;
-    border-radius: 5px;
+    border-radius: 1px;
     position: relative;
     top: 5%;
     left: 67%;
@@ -212,7 +234,7 @@ i.fa-heart{
 
 .restaurant .restaurant_content i.fa-heart:hover{
     color: transparent;
-    -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: #9356DC; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: transparent;
 }
@@ -369,3 +391,18 @@ footer i{
     margin: 5vh 0 5vh 0;
 }
 
+@media screen and (min-width: 900px){
+
+.logo img{
+    transition: 500ms;
+    width: 20%;
+}
+
+.how h2{
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+    transition: 500ms;
+}
+
+}
