@@ -352,6 +352,14 @@ footer i {
     font-size: 2em;
 }
 
+.main_restaurant .title_restaurant i:hover {
+    color: transparent;
+    -webkit-text-fill-color: #9356DC;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+}
+
 .container_menu section {
     min-width: 320px;
     margin: 10px;
